@@ -1,4 +1,4 @@
-# Event Identification Simulation Datasets
+# Event Identification Simulation 
 1, All the simulation datasets are based on the 68-bus power system with the models as follows: 
 This is a 16-machine system with 86 transmission lines and
 % 68 buses. Data are extracted from the GE final report
@@ -19,3 +19,5 @@ This is a 16-machine system with 86 transmission lines and
 6, One second of post-event data matrix is selected to identify the type of events, and notice that the data matrix of faults events are selected after faults clearance; 
 7, The model of capacitor banking is based on paper[];
 8, All the voltage measurements are in the 'bus_v' and its absolute values or the voltage magnitudes are utilized in our algorithm.
+9, The related matlab code based on PST are in the file of 'Matlab code';
+
