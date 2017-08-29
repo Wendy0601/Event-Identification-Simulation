@@ -1,0 +1,1 @@
+condition_c: after reduce the active power of each bus 0.2 pu
