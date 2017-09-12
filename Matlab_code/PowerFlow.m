@@ -1,12 +1,8 @@
 clear all; close all; clc 
-%run the s_simu and produce the voltages V1 V2 of all buses and save the dataset as the following .mat format
-% load('4-14topology_change.mat');
-% load('8-9topology_change.mat');
-% load('33-38topology_change.mat');
-% load('3-18topology_change.mat');
-load('2-3and8-9topology_change.mat');
-% load('NoTopology_change.mat');
- 
+data16em2
+% do any kind of events and run the non linear simulation to produce V1,V2, and bus_sol
+bus(:,6)=bus(:,6)+0.05; % this is power injection change
+[bus_v,bus_freq,theta,mac_ang,mac_spd,flag_error,ilf,V1,V2,bus_sol]=s_simulwt(sw_con,load_con,lmod_con,bus,line);
 R = line(:,3);
 X = line(:,4);
 B = line(:,5);
@@ -19,5 +15,3 @@ P=real(S1);
 Q=imag(S1);
 P1=P;
 Q1=Q;
- 
-% these are the power flow with time, you can choose the power flow after 10 or more steps when the initialization is done.
