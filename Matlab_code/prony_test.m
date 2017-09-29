@@ -1,4 +1,5 @@
 clear ;clc;close all; 
+%% this file uses Prony method to test the dominant frequency components, the freq_sec is the main frequency components and their magnitudes are in A; the paramter order can be changed to adjust the resolution and the time period is selected just afrer event 70 to 170;
 load('freq_30s_linetrip.mat','bus_v','mac_spd','bus_freq');%line1-2_10s.mat mac_30second.mat
 % parameters   
 dt=0.03; 
